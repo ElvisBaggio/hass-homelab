@@ -1,0 +1,34 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Homelab Configuration",
+        "description": "Configure Proxmox VE connection and Docker Socket Proxy endpoints.",
+        "data": {
+          "pve_host": "Proxmox Host IP / FQDN",
+          "pve_port": "Proxmox API Port (default: 8006)",
+          "pve_token_id": "PVE API Token ID (e.g. root@pam!ha)",
+          "pve_token_secret": "PVE API Token Secret",
+          "pve_verify_ssl": "Verify SSL Certificate",
+          "docker_hosts": "Docker Socket Proxy URLs (comma-separated, e.g. http://192.168.1.193:2375)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to Proxmox VE or Docker Socket.",
+      "invalid_auth": "Invalid PVE API Token or authentication credentials.",
+      "unknown": "Unexpected error occurred."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Homelab Options",
+        "data": {
+          "scan_interval": "Update interval (seconds)",
+          "docker_hosts": "Docker Socket Proxy URLs (comma-separated)"
+        }
+      }
+    }
+  }
+}
