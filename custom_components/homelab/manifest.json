@@ -1,0 +1,12 @@
+{
+  "domain": "homelab",
+  "name": "Homelab",
+  "codeowners": ["@ElvisBaggio"],
+  "config_flow": true,
+  "documentation": "https://github.com/ElvisBaggio/hass-homelab",
+  "integration_type": "hub",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/ElvisBaggio/hass-homelab/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}
